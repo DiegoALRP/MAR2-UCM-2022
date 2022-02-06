@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0E3FAF0C-C1C6-45C9-8E8D-38D892AD36D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>0E3FAF0C-C1C6-45C9-8E8D-38D892AD36D7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>1. La Cuerda de la Cometa X Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>665692711.85493696</real>
+			<key>timeStoppedRecording</key>
+			<real>665692711.91778898</real>
+			<key>title</key>
+			<string>1. La Cuerda de la Cometa X Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>0E3FAF0C-C1C6-45C9-8E8D-38D892AD36D7</string>
+		</dict>
+		<key>5FA78B85-7484-4C79-856D-F5A5C4CF9C74</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>5FA78B85-7484-4C79-856D-F5A5C4CF9C74.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>665692711.85308194</real>
+			<key>timeStoppedRecording</key>
+			<real>665692711.91785896</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>5FA78B85-7484-4C79-856D-F5A5C4CF9C74</string>
+		</dict>
+		<key>9A1D7F24-561E-452F-BD89-DA2A3A27D804</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>9A1D7F24-561E-452F-BD89-DA2A3A27D804.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>1. La Cuerda de la Cometa X Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>665692711.91967404</real>
+			<key>timeStoppedRecording</key>
+			<real>665692711.93364406</real>
+			<key>title</key>
+			<string>1. La Cuerda de la Cometa X Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>9A1D7F24-561E-452F-BD89-DA2A3A27D804</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

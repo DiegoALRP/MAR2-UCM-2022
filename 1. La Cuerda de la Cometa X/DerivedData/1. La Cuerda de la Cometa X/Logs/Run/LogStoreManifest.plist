@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0C8224A0-B55A-40D1-872C-7FE74D261F7C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0C8224A0-B55A-40D1-872C-7FE74D261F7C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665692185.17083299</real>
+			<key>timeStoppedRecording</key>
+			<real>665692186.10546803</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>0C8224A0-B55A-40D1-872C-7FE74D261F7C</string>
+		</dict>
+		<key>112BFDDD-F609-471E-A366-6C3E801C140A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>112BFDDD-F609-471E-A366-6C3E801C140A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665692724.00265896</real>
+			<key>timeStoppedRecording</key>
+			<real>665692724.93172598</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>112BFDDD-F609-471E-A366-6C3E801C140A</string>
+		</dict>
+		<key>153A363E-3AA6-46BE-B6CA-6F13DDD66BC7</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>153A363E-3AA6-46BE-B6CA-6F13DDD66BC7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690131.95456898</real>
+			<key>timeStoppedRecording</key>
+			<real>665690132.77227998</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>153A363E-3AA6-46BE-B6CA-6F13DDD66BC7</string>
+		</dict>
+		<key>2169577E-F791-4678-B971-EACE7CC32941</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2169577E-F791-4678-B971-EACE7CC32941.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689227.34067404</real>
+			<key>timeStoppedRecording</key>
+			<real>665689245.53386402</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>2169577E-F791-4678-B971-EACE7CC32941</string>
+		</dict>
+		<key>281C6D00-ED23-4BFB-AF92-F7882CD82BD0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>281C6D00-ED23-4BFB-AF92-F7882CD82BD0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688236.58191204</real>
+			<key>timeStoppedRecording</key>
+			<real>665688257.39711201</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>281C6D00-ED23-4BFB-AF92-F7882CD82BD0</string>
+		</dict>
+		<key>2A4159BD-2746-45B7-991D-015270AD1F4C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2A4159BD-2746-45B7-991D-015270AD1F4C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689197.27065396</real>
+			<key>timeStoppedRecording</key>
+			<real>665689198.18708396</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>2A4159BD-2746-45B7-991D-015270AD1F4C</string>
+		</dict>
+		<key>530A5D34-0DF6-41CC-A739-268CEF241554</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>530A5D34-0DF6-41CC-A739-268CEF241554.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665692712.88439</real>
+			<key>timeStoppedRecording</key>
+			<real>665692717.15221095</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>530A5D34-0DF6-41CC-A739-268CEF241554</string>
+		</dict>
+		<key>54373786-B7B9-4CC4-8802-7F209B36315B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>54373786-B7B9-4CC4-8802-7F209B36315B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688682.03564298</real>
+			<key>timeStoppedRecording</key>
+			<real>665688682.95004594</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>54373786-B7B9-4CC4-8802-7F209B36315B</string>
+		</dict>
+		<key>64ED64D4-A9D1-4E37-BB50-3333C38C36BF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>64ED64D4-A9D1-4E37-BB50-3333C38C36BF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690869.23780501</real>
+			<key>timeStoppedRecording</key>
+			<real>665690870.03337395</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>64ED64D4-A9D1-4E37-BB50-3333C38C36BF</string>
+		</dict>
+		<key>65D546B5-8D28-4F06-8902-31FB90B5A896</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>65D546B5-8D28-4F06-8902-31FB90B5A896.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665692294.10888398</real>
+			<key>timeStoppedRecording</key>
+			<real>665692295.04196405</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>65D546B5-8D28-4F06-8902-31FB90B5A896</string>
+		</dict>
+		<key>6C8AA80D-F519-465A-9B29-6BC9380A657D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6C8AA80D-F519-465A-9B29-6BC9380A657D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690360.86738205</real>
+			<key>timeStoppedRecording</key>
+			<real>665690361.78800404</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>6C8AA80D-F519-465A-9B29-6BC9380A657D</string>
+		</dict>
+		<key>78F3DED5-050B-4F44-B9BE-CCAC10F7F506</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>78F3DED5-050B-4F44-B9BE-CCAC10F7F506.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688715.38407803</real>
+			<key>timeStoppedRecording</key>
+			<real>665688720.19163895</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>78F3DED5-050B-4F44-B9BE-CCAC10F7F506</string>
+		</dict>
+		<key>85132E34-19FD-4C4C-9A9B-ADEF0941E732</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>85132E34-19FD-4C4C-9A9B-ADEF0941E732.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690173.26465905</real>
+			<key>timeStoppedRecording</key>
+			<real>665690174.18723297</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>85132E34-19FD-4C4C-9A9B-ADEF0941E732</string>
+		</dict>
+		<key>854D613C-86DE-4AB5-9186-F980718BC3BE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>854D613C-86DE-4AB5-9186-F980718BC3BE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688315.57952595</real>
+			<key>timeStoppedRecording</key>
+			<real>665688347.87309802</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>854D613C-86DE-4AB5-9186-F980718BC3BE</string>
+		</dict>
+		<key>8F3F5342-71B6-4C9B-ACE2-B419F1FA6D8E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8F3F5342-71B6-4C9B-ACE2-B419F1FA6D8E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688458.69225097</real>
+			<key>timeStoppedRecording</key>
+			<real>665688459.62584496</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>8F3F5342-71B6-4C9B-ACE2-B419F1FA6D8E</string>
+		</dict>
+		<key>ACA3C2F4-B88B-4D07-8157-1041F76EA898</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>ACA3C2F4-B88B-4D07-8157-1041F76EA898.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689435.99424398</real>
+			<key>timeStoppedRecording</key>
+			<real>665689436.92556798</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>ACA3C2F4-B88B-4D07-8157-1041F76EA898</string>
+		</dict>
+		<key>B5657A89-EB3C-417B-A706-84D4A4808DA9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B5657A89-EB3C-417B-A706-84D4A4808DA9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690865.16233695</real>
+			<key>timeStoppedRecording</key>
+			<real>665690866.10011494</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>B5657A89-EB3C-417B-A706-84D4A4808DA9</string>
+		</dict>
+		<key>C588D33E-C007-4D51-88A7-0FD7C4702458</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C588D33E-C007-4D51-88A7-0FD7C4702458.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689152.07798803</real>
+			<key>timeStoppedRecording</key>
+			<real>665689153.01828003</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>C588D33E-C007-4D51-88A7-0FD7C4702458</string>
+		</dict>
+		<key>C598F51D-6623-40EB-BFBF-4560A5A400DF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C598F51D-6623-40EB-BFBF-4560A5A400DF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690871.37841105</real>
+			<key>timeStoppedRecording</key>
+			<real>665690872.28196597</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>C598F51D-6623-40EB-BFBF-4560A5A400DF</string>
+		</dict>
+		<key>CF3F7D1F-0543-475A-A79B-B9065F8810F6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CF3F7D1F-0543-475A-A79B-B9065F8810F6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690792.23755801</real>
+			<key>timeStoppedRecording</key>
+			<real>665690793.15642905</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>CF3F7D1F-0543-475A-A79B-B9065F8810F6</string>
+		</dict>
+		<key>D58F0224-FC12-4A6A-9B56-F0B946D6C5FD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D58F0224-FC12-4A6A-9B56-F0B946D6C5FD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665690139.58024704</real>
+			<key>timeStoppedRecording</key>
+			<real>665690140.38438106</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>D58F0224-FC12-4A6A-9B56-F0B946D6C5FD</string>
+		</dict>
+		<key>DEF19851-2262-4F5A-9E62-06A50CCAA9A0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DEF19851-2262-4F5A-9E62-06A50CCAA9A0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689397.10144806</real>
+			<key>timeStoppedRecording</key>
+			<real>665689397.91186297</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>DEF19851-2262-4F5A-9E62-06A50CCAA9A0</string>
+		</dict>
+		<key>E1DCC4FD-EA0B-4D6A-BBDF-FCA1E19E7209</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E1DCC4FD-EA0B-4D6A-BBDF-FCA1E19E7209.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688914.51546001</real>
+			<key>timeStoppedRecording</key>
+			<real>665688919.88144803</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>E1DCC4FD-EA0B-4D6A-BBDF-FCA1E19E7209</string>
+		</dict>
+		<key>E3F62E93-BE75-4252-AEE5-8A87E431ABB8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E3F62E93-BE75-4252-AEE5-8A87E431ABB8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689253.47745895</real>
+			<key>timeStoppedRecording</key>
+			<real>665689260.34489405</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>E3F62E93-BE75-4252-AEE5-8A87E431ABB8</string>
+		</dict>
+		<key>F4433A79-B7F9-4F02-BBF1-B969AF6DDBA4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F4433A79-B7F9-4F02-BBF1-B969AF6DDBA4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688690.47854197</real>
+			<key>timeStoppedRecording</key>
+			<real>665688691.40879703</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>F4433A79-B7F9-4F02-BBF1-B969AF6DDBA4</string>
+		</dict>
+		<key>F4DCCFAF-DE2C-45D7-BB25-E71751E8F4B0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F4DCCFAF-DE2C-45D7-BB25-E71751E8F4B0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665689273.57266998</real>
+			<key>timeStoppedRecording</key>
+			<real>665689274.50657105</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>F4DCCFAF-DE2C-45D7-BB25-E71751E8F4B0</string>
+		</dict>
+		<key>FCEDD498-E9EB-4BF6-9D4B-AFD1988DACDC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FCEDD498-E9EB-4BF6-9D4B-AFD1988DACDC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>1. La Cuerda de la Cometa X project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>1. La Cuerda de la Cometa X</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>timeStartedRecording</key>
+			<real>665688183.39958298</real>
+			<key>timeStoppedRecording</key>
+			<real>665688188.49553597</real>
+			<key>title</key>
+			<string>Run 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>FCEDD498-E9EB-4BF6-9D4B-AFD1988DACDC</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

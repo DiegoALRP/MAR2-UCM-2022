@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>C14A2719-6517-4076-9AA9-CCE95AF51CA9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>C14A2719-6517-4076-9AA9-CCE95AF51CA9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>1._La_Cuerda_de_la_Cometa_X-bumwaxjbmkcaydfhrfiadashvppt</string>
+			<key>timeStartedRecording</key>
+			<real>665692712.42627096</real>
+			<key>timeStoppedRecording</key>
+			<real>665692712.87976694</real>
+			<key>title</key>
+			<string>Build target 1. La Cuerda de la Cometa X</string>
+			<key>uniqueIdentifier</key>
+			<string>C14A2719-6517-4076-9AA9-CCE95AF51CA9</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

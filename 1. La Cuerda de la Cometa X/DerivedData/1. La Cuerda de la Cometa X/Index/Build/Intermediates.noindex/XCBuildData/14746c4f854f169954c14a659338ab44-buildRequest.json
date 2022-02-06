@@ -1,0 +1,61 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "cd8fa8c5ef8011297bc5b25e8e241009fa0414f84e619a982a31a34e82b02634"
+    }
+  ],
+  "containerPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/1. La Cuerda de la Cometa X.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Index/Build/Products",
+      "derivedDataPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/diegoalrp/Documents/UCM/4to Curso/MAR2/ProblemasJuez/MAR2-UCM-2022/1. La Cuerda de la Cometa X/DerivedData/1. La Cuerda de la Cometa X/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
