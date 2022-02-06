@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B429117427AFE9740037F219 /* 4. Luces para una fiesta */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "4. Luces para una fiesta"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B429117727AFE9740037F219 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B429117E27AFE9AB0037F219 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B429117727AFE9740037F219 /* main.cpp */,
+				B429117E27AFE9AB0037F219 /* casos.txt */,
 			);
 			path = "4. Luces para una fiesta";
 			sourceTree = "<group>";
