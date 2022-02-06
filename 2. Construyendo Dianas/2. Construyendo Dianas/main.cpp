@@ -35,18 +35,18 @@ void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector
         }
     }
     
-    cout << matriz[n_sectores][valor] << endl;
-    
     if (matriz[n_sectores][valor] != MAX_INT) {
+        
+        cout << matriz[n_sectores][valor];
         
         int i = n_sectores, j = valor;
         
         while (j > 0) {
             
-            if (v_sectores[i-1] <= j && matriz[i][j] != matriz[i-1][j]) {
+            if (matriz[i-1][j] >= matriz[i][j] && v_sectores[i-1] <= j && matriz[i][j - v_sectores[i-1]] < matriz[i][j]) {
                 
-                cout << v_sectores[i] << " ";
-                j = j - v_sectores[i];
+                cout << " " << v_sectores[i-1];
+                j = j - v_sectores[i-1];
             }
             else {
                 
@@ -56,8 +56,10 @@ void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector
     }
     else {
         
-        cout << "imposible" << endl;
+        cout << "Imposible";
     }
+    
+    cout << "\n";
 }
 
 bool resuelveCaso() {
