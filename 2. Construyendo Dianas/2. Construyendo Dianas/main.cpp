@@ -12,7 +12,7 @@
 
 using namespace std;
 
-const long long int MAX_INT = 1000000000;
+const long long int MAX_INT = 9999999999;
 
 void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector<vector<long long int>> &matriz) {
     
@@ -43,8 +43,9 @@ void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector
         
         while (j > 0) {
             
-            if (matriz[i-1][j] >= matriz[i][j] && v_sectores[i-1] <= j && matriz[i][j - v_sectores[i-1]] < matriz[i][j]) {
-                
+            //if (matriz[i-1][j] >= matriz[i][j] && v_sectores[i-1] <= j && matriz[i][j - v_sectores[i-1]] < matriz[i][j]) {
+            if (j >= v_sectores[i-1] && matriz[i][j - v_sectores[i-1]] + 1 == matriz[i][j]) {
+            
                 cout << " " << v_sectores[i-1];
                 j = j - v_sectores[i-1];
             }
