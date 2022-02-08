@@ -4,6 +4,30 @@
 // Comentario general sobre la solución,
 // explicando cómo se resuelve el problema
 
+/*
+    Matematico
+ 
+    matematico(j) = longitud[i]                 si longitud[i] == j
+    matematico(j) = 0                           si matematico(j - longitud[i] == 0
+    matematico(j) = matematico(j - longitud[i]) si matematico(j - longitud[i] != 0
+ 
+    0 <= i < num_cordeles
+    longitud[i] <= j <= longitud_deseada
+ 
+ 
+    Ingeniero
+    
+    ingeniero[j] = infinito                         si ingeniero[j - longitud[i]] + 1 >= ingeniero[j]
+    ingeniero[j] = ingeniero[j - longitud[i]  + 1   en otro caso
+ 
+    
+    Economista
+ 
+    economista[j] = precio[i]                               si longitud[i] == j
+    economista[j] = infinito                                si longitud[i] != j && economista[j-longitud[i]] + precio[i] >= economista[j]
+    economista[j] = economista[j-longitud[i]] + precio[i]   en otro caso
+ */
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -11,45 +35,40 @@
 
 using namespace std;
 
-const long long int MAX_INT = 9999999999;
+const long long int MAX_INT = 99999999;
 
-void resolver(long long int n_cordeles, long long int long_deseada, vector<long long int> v_longitud, vector<long long int> v_precio) {
+void resolver(long long int n_cordeles, long long int long_deseada, vector<long long int>& v_longitud, vector<long long int>& v_precio) {
     
     vector<long long int> math = vector<long long int>(long_deseada + 1, 0);
     vector<long long int> inge = vector<long long int>(long_deseada + 1, MAX_INT);
     vector<long long int> eco = vector<long long int>(long_deseada + 1, MAX_INT);
     
     math[0] = 1;
+    inge[0] = 0;
+    eco[0] = 0;
     
-    for (int i = 0; i < n_cordeles; i++) {
+    for (long long int i = 0; i < n_cordeles; i++) {
         
-        for (int j = long_deseada; j - v_longitud[i] >= 0; j--) {
+        for (long long int j = long_deseada; j - v_longitud[i] >= 0; j--) {
             
+            //Matemático
             if (math[j - v_longitud[i]] != 0) {
                 
                 math[j] = math[j - v_longitud[i]] + math[j];
-                //math[j]++;
             }
             
+            //Ingeniero
+            if (inge[j - v_longitud[i]] != MAX_INT && inge[j - v_longitud[i]] + 1 < inge[j]) {
+                
+                inge[j] = inge[j - v_longitud[i]] + 1;
+            }
+            
+            //Economista
             if (eco[j - v_longitud[i]] != MAX_INT && (v_precio[i] + eco[j - v_longitud[i]] < eco[j])) {
                 
                 eco[j] = v_precio[i] + eco[j - v_longitud[i]];
             }
-            
-            if (inge[j - v_longitud[i]] + 1 < inge[j]) {
-                
-                inge[j] = inge[j - v_longitud[i]] + 1;
-            }
         }
-        
-        if (v_precio[i] < eco[v_longitud[i]]) {
-            
-            eco[v_longitud[i]] = v_precio[i];
-        }
-        
-        //math[v_longitud[i]]++;
-        inge[v_longitud[i]] = 1;
-        //math[v_longitud[i]]++;
     }
     
     if (math[long_deseada] > 0) {
@@ -60,17 +79,10 @@ void resolver(long long int n_cordeles, long long int long_deseada, vector<long 
         
         cout << "NO" << endl;
     }
-    
-    /*cout << "matematico: " << math[long_deseada] << endl;
-    cout << "ingeniero : " << inge[long_deseada] << endl;
-    cout << "economista: " << eco[long_deseada] << endl;*/
 }
 
-// resuelve un caso de prueba, leyendo de la entrada la
-// configuración, y escribiendo la respuesta
 bool resuelveCaso() {
    
-   // leer los datos de la entrada
     
     long long int n_cordeles;
     long long int long_deseada;
@@ -92,9 +104,6 @@ bool resuelveCaso() {
     }
     
     resolver(n_cordeles, long_deseada, v_longitud, v_precio);
-    //Solucion sol = resolver(datos);
-
-    // escribir sol
 
     return true;
 }
