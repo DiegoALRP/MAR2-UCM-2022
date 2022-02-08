@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B41F531D27B26B35007574CD /* EntInf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntInf.h; sourceTree = "<group>"; };
 		B42215B127AF2D7700F2B221 /* 2. Construyendo Dianas */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2. Construyendo Dianas"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42215B427AF2D7700F2B221 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B42215BB27AF33E600F2B221 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B42215B427AF2D7700F2B221 /* main.cpp */,
+				B41F531D27B26B35007574CD /* EntInf.h */,
 				B42215BB27AF33E600F2B221 /* casos.txt */,
 			);
 			path = "2. Construyendo Dianas";

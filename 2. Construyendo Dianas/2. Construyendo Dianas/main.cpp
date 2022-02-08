@@ -9,12 +9,11 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include "EntInf.h"
 
 using namespace std;
 
-const long long int MAX_INT = 9999999999;
-
-void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector<vector<long long int>> &matriz) {
+void dianas (int valor, int n_sectores, vector<int> v_sectores, vector<vector<EntInf>> &matriz) {
     
     matriz[0][0] = 0;
     
@@ -35,9 +34,9 @@ void dianas (int valor, int n_sectores, vector<long long int> v_sectores, vector
         }
     }
     
-    if (matriz[n_sectores][valor] != MAX_INT) {
+    if (matriz[n_sectores][valor] != Infinito) {
         
-        cout << matriz[n_sectores][valor];
+        cout << matriz[n_sectores][valor] << ":";
         
         int i = n_sectores, j = valor;
         
@@ -75,14 +74,14 @@ bool resuelveCaso() {
         return false;
     }
     
-    vector<long long int> v_sectores = vector<long long int>(n_sectores, 0);
+    vector<int> v_sectores = vector<int>(n_sectores, 0);
     
     for (int i = 0; i < n_sectores; i++) {
         
         cin >> v_sectores[i];
     }
     
-    vector<vector<long long int>> matriz(n_sectores + 1, vector<long long int>(valor + 1, MAX_INT));
+    vector<vector<EntInf>> matriz(n_sectores + 1, vector<EntInf>(valor + 1, Infinito));
     
     dianas(valor, n_sectores, v_sectores, matriz);
     
