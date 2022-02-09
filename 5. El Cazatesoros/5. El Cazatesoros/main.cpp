@@ -14,14 +14,22 @@ using namespace std;
 
 int cazatesoros(int segs_botella, int n_cofres, vector<int> &v_profundidad, vector<int> &v_oro, vector<vector<int>> &matriz, int i, int j) {
     
-    if (matriz[i][j]!=-1) return matriz[i][j];
+    if (matriz[i][j]!=-1) {
+        
+        return matriz[i][j];
+    }
     if (j == 0) {
-            
-            matriz[i][j]=0; return 0;
-        }
+        
+        matriz[i][j]=0;
+        return 0;
+    }
+    
     if(i==0) return -1;
     
-    if(3*v_profundidad[i-1]>j) matriz[i][j]=cazatesoros(segs_botella,n_cofres,v_profundidad,v_oro,matriz,i-1,j);
+    if(3*v_profundidad[i-1] > j) {
+        
+        matriz[i][j] = cazatesoros(segs_botella,n_cofres,v_profundidad,v_oro,matriz,i-1,j);
+    }
     else{
         int sin,con;
         sin=cazatesoros(segs_botella,n_cofres,v_profundidad,v_oro,matriz,i-1,j);

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B42911A127B146D90037F219 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B42911A027B146D90037F219 /* main.cpp */; };
+		B429378B27B3DE1E00FD3F8B /* elCazatesoros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B429378A27B3DE1E00FD3F8B /* elCazatesoros.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 		B429119D27B146D90037F219 /* 5. El Cazatesoros */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "5. El Cazatesoros"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42911A027B146D90037F219 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B42911A727B146E90037F219 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
+		B429378A27B3DE1E00FD3F8B /* elCazatesoros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = elCazatesoros.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				B42911A027B146D90037F219 /* main.cpp */,
+				B429378A27B3DE1E00FD3F8B /* elCazatesoros.cpp */,
 				B42911A727B146E90037F219 /* casos.txt */,
 			);
 			path = "5. El Cazatesoros";
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42911A127B146D90037F219 /* main.cpp in Sources */,
+				B429378B27B3DE1E00FD3F8B /* elCazatesoros.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
