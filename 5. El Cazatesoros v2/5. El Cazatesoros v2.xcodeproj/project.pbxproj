@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B42911A127B146D90037F219 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B42911A027B146D90037F219 /* main.cpp */; };
+		B42937AD27B59D5000FD3F8B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B42937AC27B59D5000FD3F8B /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B429119B27B146D90037F219 /* CopyFiles */ = {
+		B42937A727B59D5000FD3F8B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,13 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B429119D27B146D90037F219 /* 5. El Cazatesoros */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "5. El Cazatesoros"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B42911A027B146D90037F219 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		B42911A727B146E90037F219 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
+		B42937A927B59D5000FD3F8B /* 5. El Cazatesoros v2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "5. El Cazatesoros v2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42937AC27B59D5000FD3F8B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B42937B327B59D6A00FD3F8B /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B429119A27B146D90037F219 /* Frameworks */ = {
+		B42937A627B59D5000FD3F8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,66 +39,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B429119427B146D90037F219 = {
+		B42937A027B59D5000FD3F8B = {
 			isa = PBXGroup;
 			children = (
-				B429119F27B146D90037F219 /* 5. El Cazatesoros */,
-				B429119E27B146D90037F219 /* Products */,
+				B42937AB27B59D5000FD3F8B /* 5. El Cazatesoros v2 */,
+				B42937AA27B59D5000FD3F8B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B429119E27B146D90037F219 /* Products */ = {
+		B42937AA27B59D5000FD3F8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B429119D27B146D90037F219 /* 5. El Cazatesoros */,
+				B42937A927B59D5000FD3F8B /* 5. El Cazatesoros v2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B429119F27B146D90037F219 /* 5. El Cazatesoros */ = {
+		B42937AB27B59D5000FD3F8B /* 5. El Cazatesoros v2 */ = {
 			isa = PBXGroup;
 			children = (
-				B42911A027B146D90037F219 /* main.cpp */,
-				B42911A727B146E90037F219 /* casos.txt */,
+				B42937AC27B59D5000FD3F8B /* main.cpp */,
+				B42937B327B59D6A00FD3F8B /* casos.txt */,
 			);
-			path = "5. El Cazatesoros";
+			path = "5. El Cazatesoros v2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B429119C27B146D90037F219 /* 5. El Cazatesoros */ = {
+		B42937A827B59D5000FD3F8B /* 5. El Cazatesoros v2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B42911A427B146D90037F219 /* Build configuration list for PBXNativeTarget "5. El Cazatesoros" */;
+			buildConfigurationList = B42937B027B59D5000FD3F8B /* Build configuration list for PBXNativeTarget "5. El Cazatesoros v2" */;
 			buildPhases = (
-				B429119927B146D90037F219 /* Sources */,
-				B429119A27B146D90037F219 /* Frameworks */,
-				B429119B27B146D90037F219 /* CopyFiles */,
+				B42937A527B59D5000FD3F8B /* Sources */,
+				B42937A627B59D5000FD3F8B /* Frameworks */,
+				B42937A727B59D5000FD3F8B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "5. El Cazatesoros";
-			productName = "5. El Cazatesoros";
-			productReference = B429119D27B146D90037F219 /* 5. El Cazatesoros */;
+			name = "5. El Cazatesoros v2";
+			productName = "5. El Cazatesoros v2";
+			productReference = B42937A927B59D5000FD3F8B /* 5. El Cazatesoros v2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B429119527B146D90037F219 /* Project object */ = {
+		B42937A127B59D5000FD3F8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					B429119C27B146D90037F219 = {
+					B42937A827B59D5000FD3F8B = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = B429119827B146D90037F219 /* Build configuration list for PBXProject "5. El Cazatesoros" */;
+			buildConfigurationList = B42937A427B59D5000FD3F8B /* Build configuration list for PBXProject "5. El Cazatesoros v2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,29 +106,29 @@
 				en,
 				Base,
 			);
-			mainGroup = B429119427B146D90037F219;
-			productRefGroup = B429119E27B146D90037F219 /* Products */;
+			mainGroup = B42937A027B59D5000FD3F8B;
+			productRefGroup = B42937AA27B59D5000FD3F8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B429119C27B146D90037F219 /* 5. El Cazatesoros */,
+				B42937A827B59D5000FD3F8B /* 5. El Cazatesoros v2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B429119927B146D90037F219 /* Sources */ = {
+		B42937A527B59D5000FD3F8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42911A127B146D90037F219 /* main.cpp in Sources */,
+				B42937AD27B59D5000FD3F8B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B42911A227B146D90037F219 /* Debug */ = {
+		B42937AE27B59D5000FD3F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		B42911A327B146D90037F219 /* Release */ = {
+		B42937AF27B59D5000FD3F8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +239,7 @@
 			};
 			name = Release;
 		};
-		B42911A527B146D90037F219 /* Debug */ = {
+		B42937B127B59D5000FD3F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -247,7 +247,7 @@
 			};
 			name = Debug;
 		};
-		B42911A627B146D90037F219 /* Release */ = {
+		B42937B227B59D5000FD3F8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -258,25 +258,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B429119827B146D90037F219 /* Build configuration list for PBXProject "5. El Cazatesoros" */ = {
+		B42937A427B59D5000FD3F8B /* Build configuration list for PBXProject "5. El Cazatesoros v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B42911A227B146D90037F219 /* Debug */,
-				B42911A327B146D90037F219 /* Release */,
+				B42937AE27B59D5000FD3F8B /* Debug */,
+				B42937AF27B59D5000FD3F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B42911A427B146D90037F219 /* Build configuration list for PBXNativeTarget "5. El Cazatesoros" */ = {
+		B42937B027B59D5000FD3F8B /* Build configuration list for PBXNativeTarget "5. El Cazatesoros v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B42911A527B146D90037F219 /* Debug */,
-				B42911A627B146D90037F219 /* Release */,
+				B42937B127B59D5000FD3F8B /* Debug */,
+				B42937B227B59D5000FD3F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B429119527B146D90037F219 /* Project object */;
+	rootObject = B42937A127B59D5000FD3F8B /* Project object */;
 }
