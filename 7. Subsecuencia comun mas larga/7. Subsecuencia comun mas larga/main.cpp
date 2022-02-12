@@ -83,7 +83,7 @@ bool resuelveCaso() {
     
     subcomun(0, 0, word_a, long_a, word_b, long_b, matriz, maxi);
     
-    cout << maxi << endl;
+    //cout << maxi << endl;
     
     string res;
     
