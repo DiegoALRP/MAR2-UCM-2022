@@ -26,6 +26,8 @@
 		B42FAC3227B7AC4C00DE6D98 /* 8. Seis grados de separacion */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "8. Seis grados de separacion"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42FAC3527B7AC4C00DE6D98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B42FAC3C27B7AC6800DE6D98 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
+		B42FAC3D27B7B09B00DE6D98 /* Matriz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matriz.h; sourceTree = "<group>"; };
+		B42FAC3E27B7B0A800DE6D98 /* EnterosInf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterosInf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B42FAC3527B7AC4C00DE6D98 /* main.cpp */,
+				B42FAC3D27B7B09B00DE6D98 /* Matriz.h */,
+				B42FAC3E27B7B0A800DE6D98 /* EnterosInf.h */,
 				B42FAC3C27B7AC6800DE6D98 /* casos.txt */,
 			);
 			path = "8. Seis grados de separacion";
