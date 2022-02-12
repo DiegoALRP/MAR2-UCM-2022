@@ -17,8 +17,8 @@ bool resuelveCaso() {
     //leer entrada
    
     if (!std::cin)  // fin de la entrada
-        return false;
-   
+      return false;
+
     //escribir resultado
    
     return true;
