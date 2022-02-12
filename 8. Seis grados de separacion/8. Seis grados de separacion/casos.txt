@@ -8,3 +8,22 @@ Roberto Mario
 Marta Raquel
 2 1
 Miguel Zara
+5 3
+Roberto Maria
+Zara Ale
+Roberto Pepe
+4 3
+Roberto Maria
+Zara Roberto
+Pepe Zara
+0 0
+6 3
+Pepe Mario
+Roberto Zara
+Miguel Ale
+6 4
+Pepe Mario
+Mario Zara
+Zara Ale
+Pedro Juan
+

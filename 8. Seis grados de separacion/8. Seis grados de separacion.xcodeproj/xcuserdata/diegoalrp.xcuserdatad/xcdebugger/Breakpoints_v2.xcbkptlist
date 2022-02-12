@@ -14,8 +14,8 @@
             filePath = "8. Seis grados de separacion/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "resuelveCaso()"
             landmarkType = "9">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "8. Seis grados de separacion/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "floyd(n_personas, matrizC, maxi)"
             landmarkType = "9">
          </BreakpointContent>

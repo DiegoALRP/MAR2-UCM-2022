@@ -17,10 +17,11 @@
 #include "EnterosInf.h"
 #include <unordered_map>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
-void floyd(int n_personas, Matriz<EntInf> &matrizC, EntInf &maxi) {
+void floyd(int n_personas, Matriz<EntInf> &matrizC) {
     
     for (int k = 0; k < n_personas; k++) {
         for (int i = 0; i < n_personas; i++) {
@@ -28,13 +29,9 @@ void floyd(int n_personas, Matriz<EntInf> &matrizC, EntInf &maxi) {
                 
                 EntInf temp = matrizC[i][k] + matrizC[k][j];
                 
-                if (temp != Infinito && (temp < matrizC[i][j] || temp == matrizC[i][j])) {
+                if (temp < matrizC[i][j]) {
                     
                     matrizC[i][j] = temp;
-                    
-                    if (temp > maxi) {
-                        maxi = temp;
-                    }
                 }
             }
         }
@@ -93,12 +90,30 @@ bool resuelveCaso() {
     
     EntInf maxi = 0;
     
-    floyd(n_personas, matrizC, maxi);
+    floyd(n_personas, matrizC);
+    
+    //cout << matrizC;
+    
+    bool desc = false;
+    for (int i = 0; i < n_personas && !desc; i++) {
+        for (int j = 0; j < n_personas && !desc; j++) {
+        
+            if (matrizC[i][j] == Infinito) {
+                desc = true;
+            }
+            else {
+                
+                if (matrizC[i][j] > maxi) {
+                    
+                    maxi = matrizC[i][j];
+                }
+            }
+        }
+    }
     
     //escribir resultado
-    cout << maxi << endl;
     
-    if (maxi > 0 && maxi > n_personas/2) {
+    if (!desc) {
         
         cout << maxi << endl;
     }
@@ -106,6 +121,8 @@ bool resuelveCaso() {
         
         cout << "DESCONECTADA" << endl;
     }
+    
+    //cout << endl;
    
     return true;
 }
