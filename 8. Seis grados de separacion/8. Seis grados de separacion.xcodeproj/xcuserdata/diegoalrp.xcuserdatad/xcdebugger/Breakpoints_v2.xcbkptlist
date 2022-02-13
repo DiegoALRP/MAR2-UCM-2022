@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "floyd(n_personas, matrizC, maxi)"
+            landmarkName = "floyd(n_personas, matrizC)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
