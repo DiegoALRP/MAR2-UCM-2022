@@ -22,6 +22,13 @@ int ayuda_por_favor(int tam_tabla, int num_cortes, const vector<int> &cortes, ve
             esfuerzo[i][j] = max_int;
             for (int k = i; k < j; k++) {
                 
+                if (j > num_cortes + 1 || i > num_cortes + 1 || k > num_cortes + 1) {
+                    
+                    cout << "Error i: " << i << endl;
+                    cout << "Error j: " << j << endl;
+                    cout << "Error k: " << k << endl;
+                    continue;
+                }
                 int temp = esfuerzo[i][k] + esfuerzo[k][j] + 2*(cortes[j] - cortes[i]);
                 if (temp < max_int && temp < esfuerzo[i][j]) {
                     esfuerzo[i][j] = temp;
@@ -55,7 +62,7 @@ bool resuelveCaso() {
     
     int res = ayuda_por_favor(tam_tabla, num_cortes, cortes, esfuerzo);
     
-    cout << "res: " << res << endl;
+    //cout << "res: " << res << endl;
     cout << res << endl;
 
     //escribir resultado
