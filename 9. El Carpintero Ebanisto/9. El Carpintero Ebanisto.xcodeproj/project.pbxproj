@@ -26,6 +26,7 @@
 		B4D5949927BA985200F9E23B /* 9. El Carpintero Ebanisto */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "9. El Carpintero Ebanisto"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D5949C27BA985200F9E23B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B4D594A327BAA9F800F9E23B /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
+		B4D594A427BD160000F9E23B /* EnterosInf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterosInf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D5949C27BA985200F9E23B /* main.cpp */,
+				B4D594A427BD160000F9E23B /* EnterosInf.h */,
 				B4D594A327BAA9F800F9E23B /* casos.txt */,
 			);
 			path = "9. El Carpintero Ebanisto";
