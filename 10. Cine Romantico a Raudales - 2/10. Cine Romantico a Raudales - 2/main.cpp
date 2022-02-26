@@ -23,6 +23,19 @@ struct pelicula {
     bool operator > (const pelicula &peli) const {
         
         if (hora > peli.hora) {
+            return true;
+        }
+        else if (hora == peli.hora && minutos > peli.minutos) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    
+    bool operator < (const pelicula &peli) const {
+        
+        if (hora > peli.hora) {
             return false;
         }
         else if (hora == peli.hora && minutos > peli.minutos) {
@@ -34,6 +47,11 @@ struct pelicula {
     }
 };
 
+void maraton(const vector<pelicula> &cartelera, int i, pelicula j) {
+    
+    //if
+    
+}
 
 bool resuelveCaso() {
 
@@ -54,13 +72,17 @@ bool resuelveCaso() {
         cin >> cartelera[i].hora >> aux >> cartelera[i].minutos >> cartelera[i].duracion;
     }
     
-    sort(cartelera.begin(), cartelera.end(), greater<pelicula>());
+    sort(cartelera.begin(), cartelera.end(), less<pelicula>());
+    
+    int hora_fin = cartelera.at(num_peliculas - 1).hora;
+    
+    //vector<vector<int> matriz()
     
     int bonita_la_vida;
     
     //escribir resultado
    
-    return true;
+     return true;
 }
 
 int main() {
