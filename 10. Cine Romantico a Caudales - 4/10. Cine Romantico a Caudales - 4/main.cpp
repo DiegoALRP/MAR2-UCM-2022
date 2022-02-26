@@ -54,10 +54,10 @@ int suma_duracion(int hora, int duracion) {
 /*
  *
  *  maraton(i,j) es el máximo de minutos que se puede obtener mirando
- *  peliculas, de la pelicula 0 a la pelicula i - 1, antes de la hora j.
+ *  peliculas, de la pelicula 1 a la pelicula i, despues de la pelicula j.
  *
- *  0 <= i < num_peliculas
- *  0 <= j <= 24 horas
+ *  1 <= i <= num_peliculas
+ *  0 <= j < num_peliculas
  *
  *  Caso base:
  *
@@ -65,43 +65,41 @@ int suma_duracion(int hora, int duracion) {
  *
  *  Casos recursivos:
  *
- *      maraton(i, j) = maraton(i + 1, j)       si j > hora_inicio(i).
- *      maraton(i, j) = maximo(maraton(i + 1, j), maraton(i + 1, hora_fin(i) + 10min) + duracion(i))
+ *      maraton(i, j) = maraton(i + 1, j)       si hora_fin(j) >= hora_inicio(i).
+ *      maraton(i, j) = maximo(maraton(i + 1, j), maraton(i + 1, i) + duracion(i))
  */
 
 
-int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int num_peliculas, int i, int pelicula_actual) {
+int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int num_peliculas, int i, int j) {
     
-    if (matriz[i][pelicula_actual] == -1) {
+    if (i == num_peliculas) matriz[i][j] = 0;
+    else {
         
-        if (i == num_peliculas) matriz[i][pelicula_actual] = 0;
-        else {
+        if (i > num_peliculas || j > num_peliculas) return 0;
+        if (matriz[i][j] != -1) return matriz[i][j];
         
-            pelicula peli = cartelera[pelicula_actual];
-            int hora_actual = peli.hora + peli.duracion + DESCANSO;
+        pelicula peli = cartelera[j];
+        int hora_actual = suma_duracion(suma_duracion(peli.hora, peli.duracion), DESCANSO);
+        
+        if (cartelera[i+1].hora < hora_actual) {
             
-            if (cartelera[i].hora <= hora_actual) {
-                
-                matriz[i][pelicula_actual] = maraton(cartelera, matriz, num_peliculas, i + 1, pelicula_actual);
+            matriz [i][j] = maraton(cartelera, matriz, num_peliculas, i + 1, j);
+        }
+        else {
+            
+            int sin_peli = maraton(cartelera, matriz, num_peliculas, i + 1, j);
+            int con_peli = maraton(cartelera, matriz, num_peliculas, i + 1, i + 1) + cartelera[i+1].duracion;
+            
+            if (sin_peli > con_peli) {
+                matriz[i][j] = sin_peli;
             }
             else {
-                
-                int sin_pelicula = maraton(cartelera, matriz, num_peliculas, i + 1, pelicula_actual);
-
-                int duracion = cartelera[i].duracion;
-                int con_pelicula = maraton(cartelera, matriz, num_peliculas, i + 1, i) + duracion;
-                
-                if (sin_pelicula > con_pelicula) {
-                    matriz[i][pelicula_actual] = sin_pelicula;
-                }
-                else {
-                    matriz[i][pelicula_actual] = con_pelicula;
-                }
+                matriz[i][j] = con_peli;
             }
         }
     }
     
-    return matriz[i][pelicula_actual];
+    return matriz[i][j];
 }
 
 bool resuelveCaso() {
@@ -115,17 +113,20 @@ bool resuelveCaso() {
     if (num_peliculas == 0)  // fin de la entrada
       return false;
     
-    vector<pelicula> cartelera = vector<pelicula>(num_peliculas);
+    vector<pelicula> cartelera = vector<pelicula>(num_peliculas + 1);
     char aux;
     int hora, minuto, duracion;
     
-    for (int i = 0; i < num_peliculas; i++) {
+    for (int i = 1; i <= num_peliculas; i++) {
         
         cin >> hora >> aux >> minuto >> duracion;
         
         cartelera[i].hora = hora*100 + minuto;
         cartelera[i].duracion = duracion;
     }
+    
+    cartelera[0].hora = -10;
+    cartelera[0].duracion = 0;
     
     sort(cartelera.begin(), cartelera.end(), less<pelicula>());
     
