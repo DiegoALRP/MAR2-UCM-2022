@@ -19,17 +19,69 @@ struct moneda {
     
     int valor;
     int cantidad;
+};
+
+/*int bolsillo(const vector<moneda> &v_moneda, vector<int> &sol, int precio_coche, int i, int j) {
     
-    bool operator > (const moneda &mone) const {
+    
+    if ((i == 0 && j == 0) || j == 0) {
+        sol[j] = 0;
+        return 0;
+    }
+    if (i == 0) {
+        sol[j] = infinito;
+        return infinito;
+    }
+    //if (sol[j] != infinito) return sol[j];
+    
+    int valor = v_moneda[i-1].valor;
+    int cantidad = v_moneda[i-1].cantidad;
+    
+    int a = bolsillo(v_moneda, sol, precio_coche, i - 1, j);
+    
+    int k = 1;
+    while (k <= cantidad && j - valor*k >= 0) {
         
-        if (valor > mone.valor) {
-            return true;
+        int b = bolsillo(v_moneda, sol, precio_coche, i - 1, j - valor*k);
+        if (b != infinito) {
+            b += k;
         }
-        else {
-            return false;
+        sol[j] = min(a, b);
+        k++;
+    }
+    
+    return sol[j];
+}*/
+
+/*int bolsillo(const vector<moneda> &v_moneda, vector<vector<int>> &sol2, int precio_coche, int num_tipos_monedas) {
+    
+    sol2[0][0] = 0;
+    
+    for (int i = 1; i <= num_tipos_monedas; i++) {
+        
+        sol2[i][0] = 0;
+        
+        int valor = v_moneda[i-1].valor;
+        int cantidad = v_moneda[i-1].cantidad;
+        
+        for (int j = precio_coche; j >= 0; j--) {
+            
+            if (valor > j) {
+                sol2[i][j] = sol2[i-1][j];
+            }
+            for (int k = 1; k <= cantidad && k*valor <= j; k++) {
+                
+                int a = sol2[i-1][j];
+                int b =sol2[i-1][j - k*valor] + k;
+                
+                sol2[i][j] = min(sol2[i-1][j], sol2[i-1][j - k*valor] + k);
+            }
         }
     }
-};
+    
+    return sol2[num_tipos_monedas][precio_coche];
+}*/
+
 
 
 bool resuelveCaso() {
@@ -49,13 +101,18 @@ bool resuelveCaso() {
     int precio_coche;
     cin >> precio_coche;
     
-    vector<vector<int>> matriz(num_tipos_monedas + 1, vector<int>(precio_coche + 1, infinito));
+    vector<int> sol = vector<int>(precio_coche + 1, infinito);
+    vector<vector<int>> sol2(num_tipos_monedas + 1, vector<int>(precio_coche + 1, infinito));
     
-    //bolsillo(v_moneda, num_tipos_monedas, matriz, precio_coche);
+    int res = bolsillo(v_moneda, sol, precio_coche, num_tipos_monedas, precio_coche);
+    //int res = bolsillo(v_moneda, sol2, precio_coche, num_tipos_monedas);
     
-    cout << matriz[0][precio_coche] << endl;
-    
-    //cout << res << endl;
+    if (res != infinito) {
+        cout << "SI " << res << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
    
     return true;
 }
