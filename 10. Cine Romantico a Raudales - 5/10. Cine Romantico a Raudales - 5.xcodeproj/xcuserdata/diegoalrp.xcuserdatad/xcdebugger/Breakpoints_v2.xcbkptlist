@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "67F0AFB0-2E79-4B20-A109-109802A6A168"
+   uuid = "B2D3DB85-FE84-4CCA-BA55-CED9E41021E2"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A390D24C-F1F1-46A9-B5E4-6BD5DE9A9170"
+            uuid = "2FEC4C8C-BA25-4F8C-B96C-23A2B0843571"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "10. Cine Romantico a Caudales - 4/main.cpp"
+            filePath = "10. Cine Romantico a Raudales - 5/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "maraton(cartelera, matriz, num_peliculas, i, j)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79DB5B27-D61A-4939-A54C-B90E3980AFC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "10. Cine Romantico a Raudales - 5/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "maraton(cartelera, sol, num_peliculas, i)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "09C9426B-DC68-4ACF-B26C-0C8E82275A63"
+            uuid = "88AA148E-4C17-4276-A443-5251FD1CD250"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "10. Cine Romantico a Caudales - 4/main.cpp"
+            filePath = "10. Cine Romantico a Raudales - 5/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "resuelveCaso()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1437369A-C9A3-4E29-B1AE-B52C65D795B0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "10. Cine Romantico a Caudales - 4/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "resuelveCaso()"
             landmarkType = "9">
          </BreakpointContent>

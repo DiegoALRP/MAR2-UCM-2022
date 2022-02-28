@@ -43,10 +43,19 @@ struct pelicula {
     }
 };
 
-void suma_duracion(int &hora, int duracion) {
+/*void suma_duracion(int &hora, int duracion) {
     
     hora += duracion/60*100;
     hora += duracion%60;
+}*/
+int suma_duracion(int hora, int duracion) {
+    
+    duracion += 10;
+    int m = hora%100;
+    int h = hora - m;
+    m += duracion;
+    
+    return h + m/60*100 + m%60;
 }
 
 /*
@@ -70,6 +79,7 @@ void suma_duracion(int &hora, int duracion) {
 
 int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int num_peliculas, int i, int hora_actual) {
     
+    if (matriz[i][hora_actual] != 0) return matriz[i][hora_actual];
     if (matriz[i][hora_actual] == 0) {
         
         if (i == num_peliculas) matriz[i][hora_actual] = 0;
@@ -84,8 +94,8 @@ int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int 
             
             int hora_fin = cartelera[i].hora;
             int duracion = cartelera[i].duracion;
-            suma_duracion(hora_fin, duracion);
-            int con_pelicula_actual = maraton(cartelera, matriz, num_peliculas, i + 1, hora_fin + DESCANSO) + duracion;
+            hora_fin = suma_duracion(hora_fin, duracion);
+            int con_pelicula_actual = maraton(cartelera, matriz, num_peliculas, i + 1, hora_fin) + duracion;
             
             if (sin_pelicula_actual > con_pelicula_actual) {
                 matriz[i][hora_actual] = sin_pelicula_actual;
@@ -127,7 +137,7 @@ bool resuelveCaso() {
     //int hora_fin = cartelera.at(num_peliculas - 1).hora;
     //suma_duracion(hora_fin, cartelera.at(num_peliculas - 1).duracion);
     
-    vector<vector<int>> matriz(num_peliculas + 1, vector<int> (2401));
+    vector<vector<int>> matriz(num_peliculas + 1, vector<int> (2401, 0));
     
     int bonita_la_vida = maraton(cartelera, matriz, num_peliculas, 0, 0);
     

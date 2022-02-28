@@ -45,10 +45,17 @@ struct pelicula {
 
 int suma_duracion(int hora, int duracion) {
     
-    hora += duracion/60*100;
+    /*hora += duracion/60*100;
     hora += duracion%60;
     
-    return hora;
+    return hora;*/
+    
+    duracion += 10;
+    int m = hora%100;
+    int h = hora - m;
+    m += duracion;
+    
+    return h + m/60*100 + m%60;
 }
 
 /*
@@ -72,6 +79,7 @@ int suma_duracion(int hora, int duracion) {
 
 int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int num_peliculas, int i, int j) {
     
+    if (matriz[i][j] != -1) return matriz[i][j];
     if (i == num_peliculas) matriz[i][j] = 0;
     else {
         
@@ -79,7 +87,7 @@ int maraton(const vector<pelicula> &cartelera, vector<vector<int>> &matriz, int 
         if (matriz[i][j] != -1) return matriz[i][j];
         
         pelicula peli = cartelera[j];
-        int hora_actual = suma_duracion(suma_duracion(peli.hora, peli.duracion), DESCANSO);
+        int hora_actual = suma_duracion(peli.hora, peli.duracion);
         
         if (cartelera[i+1].hora < hora_actual) {
             
