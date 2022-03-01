@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B4488E8327CE4769006804A4 /* 13. Insercion de Parentesis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "13. Insercion de Parentesis"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4488E8627CE4769006804A4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B4488E8D27CE47F7006804A4 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B4488E8627CE4769006804A4 /* main.cpp */,
+				B4488E8D27CE47F7006804A4 /* casos.txt */,
 			);
 			path = "13. Insercion de Parentesis";
 			sourceTree = "<group>";
