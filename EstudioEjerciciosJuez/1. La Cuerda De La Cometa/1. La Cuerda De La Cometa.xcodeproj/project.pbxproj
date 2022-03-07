@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B4488E9727D0F5B1006804A4 /* 1. La Cuerda De La Cometa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1. La Cuerda De La Cometa"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4488E9A27D0F5B1006804A4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B4488EA127D100B2006804A4 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B4488E9A27D0F5B1006804A4 /* main.cpp */,
+				B4488EA127D100B2006804A4 /* casos.txt */,
 			);
 			path = "1. La Cuerda De La Cometa";
 			sourceTree = "<group>";
