@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B4F1F90727D783200092B5C8 /* 15. Quitanieves en Invernalia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "15. Quitanieves en Invernalia"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F1F90A27D783200092B5C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B4F1F91127D783BD0092B5C8 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F1F90A27D783200092B5C8 /* main.cpp */,
+				B4F1F91127D783BD0092B5C8 /* casos.txt */,
 			);
 			path = "15. Quitanieves en Invernalia";
 			sourceTree = "<group>";
