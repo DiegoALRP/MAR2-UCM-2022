@@ -209,7 +209,7 @@ void resuelveCaso() {
         max_acum[i] = maxi[i] + max_acum[i + 1];
     }*/
     
-    vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
+    /*vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
     for (int i = 0; i < n_carros; i++) {
         for (int j = 0; j < m_carreteras; j++) {
             cin >> calidades[i][j];
@@ -220,6 +220,18 @@ void resuelveCaso() {
     for (int j = 0; j < m_carreteras; j++) {
         for (int i = 0; i < n_carros; i++) {
             if (calidades[i][j] > maxi[j]) {
+                maxi[j] = calidades[i][j];
+            }
+        }
+    }*/
+    
+    vector<int> maxi(m_carreteras, -1);
+    vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
+    for (int i = 0; i < n_carros; i++) {
+        for (int j = 0; j < m_carreteras; j++) {
+            cin >> calidades[i][j];
+            //if (calidades[i][j] > maxi[i] && anchura_carro[i] <= anchura_carretera[j] + 10) {
+            if (calidades[i][j] > maxi[j] && anchura_carro[i] <= anchura_carretera[j]) {
                 maxi[j] = calidades[i][j];
             }
         }
