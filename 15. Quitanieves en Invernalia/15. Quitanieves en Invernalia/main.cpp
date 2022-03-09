@@ -13,11 +13,12 @@
 
 using namespace std;
 
-//Cambiar la solucion que sea la carretera i con el carro j
+// (Clase 09/03) Cambiar la solucion que sea la carretera i con el carro j
 struct Nodo {
-    vector<int> sol; //sol[i][j] contiene el conjunto solucion donde al carro i se le asigna la carretera j
+    vector<int> sol; //sol[i][j] contiene el conjunto solucion donde a la carretera i se le asigna el coche j
     vector<bool> marca;
-    int k; // carro actual
+    int coches_usados;
+    int k; // carretera actual
     double calidad;
     double calidad_estimada;
     bool operator < (Nodo const& otro) const {
@@ -25,13 +26,14 @@ struct Nodo {
     }
 };
 
-//Aplicar el esquema de cota inferior. Esta va a ser decidir que no escogo ningun carro para
+// (Clase 09/03) Aplicar el esquema de cota inferior. Esta va a ser decidir que no escogo ningun carro para
 // las carreteras que faltan
 void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anchura_carro, const vector<int> &anchura_carretera, const vector<int> &max_acum, vector<int> &mejor_sol, int &mejor_calidad, int n, int m) {
     
     Nodo Y;
     Y.sol = vector<int>(m);
     Y.marca = vector<bool>(n, false);
+    Y.coches_usados = 0;
     Y.k = -1;
     Y.calidad = 0;
     Y.calidad_estimada = max_acum[0];
@@ -52,11 +54,12 @@ void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anc
             if (!Y.marca[i] && anchura_carro[i] <= anchura_carretera[X.k]) {
                 X.sol[X.k] = i;
                 X.marca[i] = true;
+                X.coches_usados++;
                 X.calidad = Y.calidad + calidades[i][X.k];
                 X.calidad_estimada = X.calidad + max_acum[X.k+1];
                 
                 if (X.calidad_estimada > mejor_calidad) {
-                    if (X.k == m - 1) {
+                    if (X.k == m - 1 || X.coches_usados == n) {
                         mejor_sol = X.sol;
                         mejor_calidad = X.calidad;
                     }
@@ -65,96 +68,24 @@ void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anc
                     }
                 }
                 X.marca[i] = false;
+                X.coches_usados--;
             }
-            else {
-                X.sol[X.k] = -1;
-                X.calidad = Y.calidad;
-                X.calidad_estimada = X.calidad + max_acum[X.k+1];
-                
-                if (X.calidad_estimada > mejor_calidad) {
-                    if (X.k == m - 1) {
-                        mejor_sol = X.sol;
-                        mejor_calidad = X.calidad;
-                    }
-                    else {
-                        cola.push(X);
-                    }
+            X.sol[X.k] = -1;
+            X.calidad = Y.calidad;
+            X.calidad_estimada = X.calidad + max_acum[X.k+1];
+            
+            if (X.calidad_estimada > mejor_calidad) {
+                if (X.k == m - 1 || X.coches_usados == n) {
+                    mejor_sol = X.sol;
+                    mejor_calidad = X.calidad;
                 }
-            }
-        }
-        X.sol[X.k] = -1;
-        X.calidad = Y.calidad;
-        X.calidad_estimada = X.calidad + max_acum[X.k+1];
-        
-        if (X.calidad_estimada > mejor_calidad) {
-            if (X.k == m - 1) {
-                mejor_sol = X.sol;
-                mejor_calidad = X.calidad;
-            }
-            else {
-                cola.push(X);
+                else {
+                    cola.push(X);
+                }
             }
         }
     }
 }
-
-/*void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anchura_carro, const vector<int> &anchura_carretera, const vector<int> &max_acum, vector<int> &mejor_sol, int &mejor_calidad, int n, int m) {
-    
-    Nodo Y;
-    Y.sol = vector<int>(n);
-    Y.marca = vector<bool>(m, false);
-    Y.k = -1;
-    Y.calidad = 0;
-    Y.calidad_estimada = max_acum[0];
-    priority_queue<Nodo> cola;
-    cola.push(Y);
-    mejor_calidad = -1;
-    
-    while (!cola.empty() && cola.top().calidad_estimada > mejor_calidad) {
-        
-        Y = cola.top();
-        cola.pop();
-        Nodo X(Y);
-        X.k++;
-        
-        for (int i = 0; i < m; i++) {
-            
-            if (!Y.marca[i] && anchura_carro[X.k] <= anchura_carretera[i]) {
-                X.sol[X.k] = i;
-                X.marca[i] = true;
-                X.calidad = Y.calidad + calidades[X.k][i];
-                X.calidad_estimada = X.calidad + max_acum[X.k+1];
-                
-                if (X.calidad_estimada > mejor_calidad) {
-                    if (X.k == n - 1) {
-                        mejor_sol = X.sol;
-                        mejor_calidad = X.calidad;
-                    }
-                    else {
-                        cola.push(X);
-                    }
-                }
-                X.marca[i] = false;
-            }
-            else {
-                X.sol[X.k] = -1;
-                X.calidad = Y.calidad;
-                X.calidad_estimada = X.calidad + max_acum[X.k+1];
-                
-                if (X.calidad_estimada > mejor_calidad) {
-                    if (X.k == n - 1) {
-                        mejor_sol = X.sol;
-                        mejor_calidad = X.calidad;
-                    }
-                    else {
-                        cola.push(X);
-                    }
-                }
-            }
-        }
-    }
-}*/
-
 
 void resuelveCaso() {
 
@@ -190,40 +121,6 @@ void resuelveCaso() {
         cout << 0 << endl;
         return;
     }
-        
-    
-    /*vector<int> maxi(n_carros, -1);
-    vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
-    for (int i = 0; i < n_carros; i++) {
-        for (int j = 0; j < m_carreteras; j++) {
-            cin >> calidades[i][j];
-            //if (calidades[i][j] > maxi[i] && anchura_carro[i] <= anchura_carretera[j] + 10) {
-            if (calidades[i][j] > maxi[i]) {
-                maxi[i] = calidades[i][j];
-            }
-        }
-    }
-    
-    vector<int> max_acum(n_carros + 1, 0);
-    for (int i = n_carros - 1; i >= 0; i--) {
-        max_acum[i] = maxi[i] + max_acum[i + 1];
-    }*/
-    
-    /*vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
-    for (int i = 0; i < n_carros; i++) {
-        for (int j = 0; j < m_carreteras; j++) {
-            cin >> calidades[i][j];
-        }
-    }
-    
-    vector<int> maxi(m_carreteras, -1);
-    for (int j = 0; j < m_carreteras; j++) {
-        for (int i = 0; i < n_carros; i++) {
-            if (calidades[i][j] > maxi[j]) {
-                maxi[j] = calidades[i][j];
-            }
-        }
-    }*/
     
     vector<int> maxi(m_carreteras, -1);
     vector<vector<int>> calidades(n_carros, vector<int>(m_carreteras));
@@ -257,14 +154,11 @@ int main() {
    std::ifstream in("casos.txt");
    auto cinbuf = std::cin.rdbuf(in.rdbuf());
 #endif
-   
-    int num_casos;
-    cin >> num_casos;
-    int i = 0;
-    while (i < num_casos) {
-        resuelveCaso();
-        i++;
-    }
+    
+    int numCasos;
+    std::cin >> numCasos;
+    for (int i = 0; i < numCasos; ++i)
+       resuelveCaso();
    
    // para dejar todo como estaba al principio
 #ifndef DOMJUDGE
