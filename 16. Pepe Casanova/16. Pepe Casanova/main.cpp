@@ -70,7 +70,7 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
     cola.push(Y);
     mejor_puntuacion = 0;
     
-    while (!cola.empty() && cola.top().puntuacion_estimada > mejor_puntuacion) {
+    while (!cola.empty() && cola.top().puntuacion_estimada >= mejor_puntuacion) {
         
         Y = cola.top();
         cola.pop();
