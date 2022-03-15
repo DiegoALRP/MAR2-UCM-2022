@@ -57,6 +57,38 @@ double cinta_voraz(const int &n, const int &duracion_cinta, const vector<cancion
     return estimacion;
 }
 
+double calculo_pesimista(const int &n, const int &duracion_cinta, const vector<cancion> &canciones, const Nodo &X) {
+    
+    double hueco1 = duracion_cinta - X.duracion_1ra_cinta;
+    double hueco2 = duracion_cinta - X.duracion_2da_cinta;
+    double estimacion = X.puntuacion;
+    
+    int i = X.cancion + 1;
+    while (i < n && canciones[i].duracion <= hueco1) {
+        hueco1 -= canciones[i].duracion;
+        estimacion += canciones[i].puntuacion;
+        i++;
+    }
+    
+    if (i < n) {
+        estimacion += (hueco1/canciones[i].duracion) * canciones[i].puntuacion;
+        hueco2 -= (hueco1/canciones[i].duracion);
+        i++;
+    }
+    
+    while (i < n && canciones[i].duracion <= hueco2) {
+        hueco2 -= canciones[i].duracion;
+        estimacion += canciones[i].puntuacion;
+        i++;
+    }
+    
+    if (i < n) {
+        estimacion += (hueco1/canciones[i].duracion) * canciones[i].puntuacion;
+    }
+    
+    return estimacion;
+}
+
 void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &canciones, vector<int> &mejor_sol, double &mejor_puntuacion) {
     
     Nodo Y;
@@ -68,7 +100,7 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
     Y.puntuacion_estimada = cinta_voraz(n, duracion_cinta, canciones, Y);
     priority_queue<Nodo> cola;
     cola.push(Y);
-    mejor_puntuacion = 0;
+    mejor_puntuacion = calculo_pesimista(n, duracion_cinta, canciones, Y);
     
     while (!cola.empty() && cola.top().puntuacion_estimada >= mejor_puntuacion) {
         
@@ -86,12 +118,14 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
             X.puntuacion = Y.puntuacion + canciones[X.cancion].puntuacion;
             X.puntuacion_estimada = Y.puntuacion_estimada;
             
-            if (X.cancion == n - 1) {
-                mejor_sol = X.sol;
-                mejor_puntuacion = X.puntuacion;
-            }
-            else {
-                cola.push(X);
+            if (X.puntuacion_estimada >= mejor_puntuacion) {
+                if (X.cancion == n - 1) {
+                    mejor_sol = X.sol;
+                    mejor_puntuacion = X.puntuacion;
+                }
+                else {
+                    cola.push(X);
+                }
             }
         }
         
@@ -103,12 +137,14 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
             X.puntuacion = Y.puntuacion + canciones[X.cancion].puntuacion;
             X.puntuacion_estimada = Y.puntuacion_estimada;
             
-            if (X.cancion == n - 1) {
-                mejor_sol = X.sol;
-                mejor_puntuacion = X.puntuacion;
-            }
-            else {
-                cola.push(X);
+            if (X.puntuacion_estimada >= mejor_puntuacion) {
+                if (X.cancion == n - 1) {
+                    mejor_sol = X.sol;
+                    mejor_puntuacion = X.puntuacion;
+                }
+                else {
+                    cola.push(X);
+                }
             }
         }
         
@@ -116,6 +152,7 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
         X.duracion_1ra_cinta = Y.duracion_1ra_cinta;
         X.duracion_2da_cinta = Y.duracion_2da_cinta;
         X.puntuacion = Y.puntuacion;
+        //No estoy muy seguro de este
         X.puntuacion_estimada = Y.puntuacion + cinta_voraz(n, duracion_cinta, canciones, X);
         if (X.cancion == n-1) {
             mejor_sol = X.sol;
@@ -123,6 +160,8 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
         }
         else {
             cola.push(X);
+            double pesimista = calculo_pesimista(n, duracion_cinta, canciones, X);
+            mejor_puntuacion = max(mejor_puntuacion, pesimista);
         }
     }
 }
