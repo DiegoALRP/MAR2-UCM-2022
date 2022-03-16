@@ -123,7 +123,7 @@ void cinta_rp(const int &n, const int &duracion_cinta, const vector<cancion> &ca
         }
         
         //Caso en el que se mete la cancion en la segunda cinta
-        if (Y.duracion_2da_cinta + canciones[X.cancion].duracion <= duracion_cinta) {
+        if (Y.duracion_2da_cinta + canciones[X.cancion].duracion <= duracion_cinta && Y.duracion_1ra_cinta != Y.duracion_2da_cinta) {
             //X.sol[X.cancion] = 2;
             X.duracion_1ra_cinta = Y.duracion_1ra_cinta;
             X.duracion_2da_cinta = Y.duracion_2da_cinta + canciones[X.cancion].duracion;
