@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B48A455B27E09AF000732780 /* 18. El Restaurante Come Sano */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "18. El Restaurante Come Sano"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48A455E27E09AF000732780 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		B4F88EBD27E4924E00F0EA07 /* casos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = casos.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B48A455E27E09AF000732780 /* main.cpp */,
+				B4F88EBD27E4924E00F0EA07 /* casos.txt */,
 			);
 			path = "18. El Restaurante Come Sano";
 			sourceTree = "<group>";
