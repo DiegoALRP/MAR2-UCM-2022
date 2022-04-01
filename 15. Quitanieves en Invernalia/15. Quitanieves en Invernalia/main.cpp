@@ -13,11 +13,11 @@
 using namespace std;
 
 struct Nodo {
-    vector<int> sol; //sol[i][j] contiene el conjunto solucion donde al carro i se le asigna la carretera j
-    vector<bool> marca;
+    vector<int> sol; //sol[i]=j contiene el conjunto solucion donde al carro i se le asigna la carretera j
+    vector<bool> marca; //vector de marcas que contiene informacion sobre si se ha enviado un quitanieves a la carretera i o no.
     int k; // carro actual
-    double calidad;
-    double calidad_estimada;
+    double calidad; //Calidad actual
+    double calidad_estimada; //Cota superior, estimacion optimista
     bool operator < (Nodo const& otro) const {
         return otro.calidad_estimada > calidad_estimada;
     }
@@ -42,6 +42,7 @@ void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anc
         Nodo X(Y);
         X.k++;
         
+        //Caso en el que se envia una quitanieves a alguna de las m carreteras
         for (int i = 0; i < m; i++) {
             
             if (!Y.marca[i] && anchura_carro[X.k] <= anchura_carretera[i]) {
@@ -63,6 +64,7 @@ void quitanieves_rp(const vector<vector<int>> &calidades, const vector<int> &anc
             }
         }
         
+        //Caso en el que no se envia el quitanieves a ninguna carretera
         X.calidad = Y.calidad;
         X.calidad_estimada = X.calidad + max_acum[X.k+1];
         
@@ -109,7 +111,6 @@ void resuelveCaso() {
     for (int i = 0; i < n_carros; i++) {
         for (int j = 0; j < m_carreteras; j++) {
             cin >> calidades[i][j];
-            //if (calidades[i][j] > maxi[i] && anchura_carro[i] <= anchura_carretera[j] + 10) {
             if (calidades[i][j] > maxi[i]) {
                 maxi[i] = calidades[i][j];
             }
@@ -125,11 +126,6 @@ void resuelveCaso() {
     
     vector<int> mejor_sol(n_carros);
     int mejor_calidad = 0;
-    
-    /*if (min > maxo || n_carros == 0) {
-        cout << 0 << endl;
-        return;
-    }*/
     
     quitanieves_rp(calidades, anchura_carro, anchura_carretera, max_acum, mejor_sol, mejor_calidad, n_carros, m_carreteras);
     
